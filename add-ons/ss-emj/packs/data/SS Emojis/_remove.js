@@ -1,0 +1,1 @@
+require('fs').readdirSync('.downloads').filter(f => f.endsWith('.png')).forEach(f => require('fs').unlinkSync(f));

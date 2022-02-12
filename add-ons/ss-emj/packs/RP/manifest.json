@@ -1,0 +1,15 @@
+{
+	"format_version": 2,
+	"header": {
+		"description": "Emojis from §oThe Silent Syndicate§r, ported to Minecraft for use.\nOptimized for version 1.18.0\nEmojis up to date as of: January 12, 2022",
+		"name": "Silent Syndicate Emoji Pack",
+		"uuid": "ddb63e87-54ef-48ec-9767-c4a9eaa25ac9",
+		"version": [ 2022, 1, 12 ],
+		"min_engine_version": [ 1, 18, 0 ]
+	},
+	"modules": [{
+		"type": "resources",
+		"uuid": "3e4da7c6-de5c-4731-a754-d8fb8d7240c3",
+		"version": [ 2022, 1, 12 ]
+	}]
+}

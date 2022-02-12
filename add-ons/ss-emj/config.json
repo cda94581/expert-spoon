@@ -1,0 +1,24 @@
+{
+  "name": "ss_emojis",
+  "author": "cda94581",
+  "packs": {
+    "behaviorPack": "./packs/BP",
+    "resourcePack": "./packs/RP"
+  },
+  "regolith": {
+    "profiles": {
+      "dev": {
+        "unsafe": false,
+        "filters": [{ "runWith": "nodejs", "script": "./filters/ss-emj.js" }],
+        "export": { "target": "development" },
+        "dataPath": "./packs/data"
+      },
+      "build": {
+        "unsafe": false,
+        "filters": [{ "runWith": "nodejs", "script": "./filters/ss-emj.js" }],
+        "export": { "target": "local" },
+        "dataPath": "./packs/data"
+      }
+    }
+  }
+}
