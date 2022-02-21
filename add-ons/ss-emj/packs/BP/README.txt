@@ -1,7 +1,7 @@
 Silent Syndicate Emoji Pack [BP]
-Emojis up-to-date as of January 12, 2022
-Best Supported by Minecraft 1.18.2
-Version 2022.1.12
+Emojis up-to-date as of February 20, 2022
+Best Supported by Minecraft 1.18.10
+Version 2022.2.22
 ---
 The Silent Syndicate Emoji Pack adds custom emojis from the Silent Syndicate Discord Server (discord.gg/silentwisperer).
 

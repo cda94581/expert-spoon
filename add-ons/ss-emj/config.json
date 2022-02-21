@@ -15,7 +15,10 @@
       },
       "build": {
         "unsafe": false,
-        "filters": [{ "runWith": "nodejs", "script": "./filters/ss-emj.js" }],
+        "filters": [
+          { "runWith": "nodejs", "script": "./filters/ss-emj.js" },
+          { "url": "github.com/cda94581/regolith-filters/export" }
+        ],
         "export": { "target": "local" },
         "dataPath": "./packs/data"
       }

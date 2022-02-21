@@ -1,23 +1,23 @@
 {
 	"format_version": 2,
 	"header": {
-		"description": "Emojis from §oThe Silent Syndicate§r, ported to Minecraft for use.\nOptimized for version 1.18.0\nEmojis up to date as of: January 12, 2022",
+		"description": "Emojis from §oThe Silent Syndicate§r, ported to Minecraft for use.\nOptimized for version 1.18.10\nEmojis up to date as of: February, 2022",
 		"name": "Silent Syndicate Emoji Pack",
 		"uuid": "3db38c75-1bfe-4fc3-9173-240e585f13a4",
-		"version": [ 2022, 1, 12 ],
-		"min_engine_version": [ 1, 18, 0 ]
+		"version": [ 2022, 2, 20 ],
+		"min_engine_version": [ 1, 18, 10 ]
 	},
 	"modules": [{
 		"type": "javascript",
 		"entry": "scripts/ss-emj.js",
 		"uuid": "fac73906-fd81-4453-b672-9dfa3832cf11",
-		"version": [ 2022, 1, 12 ]
+		"version": [ 2022, 2, 20 ]
 	}],
 	"dependencies": [
 		{
 			// Resource Pack
 			"uuid": "ddb63e87-54ef-48ec-9767-c4a9eaa25ac9",
-			"version": [ 2022, 1, 12 ]
+			"version": [ 2022, 2, 20 ]
 		},
 		{
 			// mojang-minecraft
