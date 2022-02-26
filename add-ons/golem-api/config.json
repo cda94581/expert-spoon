@@ -1,0 +1,33 @@
+{
+  "name": "golem_api",
+  "author": "cda94581",
+  "packs": {
+    "behaviorPack": "./packs/BP",
+    "resourcePack": "./packs/RP"
+  },
+  "regolith": {
+    "profiles": {
+      "dev": {
+        "filters": [
+          { "runWith": "nodejs", "script": "./filters/minimize.js" }
+        ],
+        "export": {
+          "target": "development",
+          "readOnly": true
+        },
+        "dataPath": "./packs/data"
+      },
+      "export": {
+        "filters": [
+          { "runWith": "nodejs", "script": "./filters/minimize.js" },
+          { "runWith": "nodejs", "script": "./filters/export.js" }
+        ],
+        "export": {
+          "target": "local",
+          "readOnly": true
+        },
+        "dataPath": "./packs/data"
+      }
+    }
+  }
+}
