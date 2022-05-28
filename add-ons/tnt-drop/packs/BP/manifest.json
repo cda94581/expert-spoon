@@ -1,0 +1,25 @@
+{
+	"format_version": 2,
+	"header": {
+		"description": "§☆\"Modifies\" TNT in a way that allows it to drop the blocks it explodes 100% of the time.\nRequires §bGameTest Framework§r\nSetup commands require the §badmin§r tag to use. By default the system is disabled.\n- Enable the module: §b-tnt enable§r\n- Disable the module: §b-tnt disable§r\n- Check if enabled: §b-tnt isenabled§r\n\nDesigned by §ccda94581§r, MIT License",
+		"name": "TNT Dropping v1.19.0",
+		"uuid": "97ae2beb-1f94-407e-ba0a-26fe6ae27c82",
+		"version": [ 1, 19, 0 ],
+		"min_engine_version": [ 1, 19, 0 ]
+	},
+	"modules": [
+		{
+			"type": "script",
+			"language": "javascript",
+			"entry": "scripts/namespace/index.js",
+			"uuid": "acbe0f99-5271-4971-a279-b5d90f772002",
+			"version": [ 1, 0, 0 ]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "b26a4d4c-afdf-4690-88f8-931846312678",
+			"version": [ 0, 1, 0 ]
+		}
+	]
+}

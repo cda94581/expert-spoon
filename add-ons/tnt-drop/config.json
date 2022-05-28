@@ -1,0 +1,60 @@
+{
+  "author": "cda94581",
+  "name": "tnt_dropping",
+  "namespace": "tnt",
+  "packs": {
+    "behaviorPack": "./packs/BP",
+    "resourcePack": "./packs/RP"
+  },
+  "regolith": {
+    "dataPath": "./packs/data",
+    "filterDefinitions": {
+      "minimize": {
+        "url": "github.com/cda94581/regolith-filters",
+        "version": "0.0.2"
+      },
+      "namespace": {
+        "url": "github.com/cda94581/regolith-filters",
+        "version": "0.0.6"
+      }
+    },
+    "profiles": {
+      "dev": {
+        "dataPath": "./packs/data",
+        "export": {
+          "readOnly": true,
+          "target": "development"
+        },
+        "filters": [
+          {
+            "filter": "namespace",
+            "settings": {
+              "oldNamespace": "namespace",
+              "type": "find"
+            }
+          },
+          { "filter": "minimize" }
+        ],
+        "unsafe": false
+      },
+      "local": {
+        "dataPath": "./packs/data",
+        "export": {
+          "readOnly": true,
+          "target": "local"
+        },
+        "filters": [
+          {
+            "filter": "namespace",
+            "settings": {
+              "oldNamespace": "namespace",
+              "type": "find"
+            }
+          },
+          { "filter": "minimize" }
+        ],
+        "unsafe": false
+      }
+    }
+  }
+}
