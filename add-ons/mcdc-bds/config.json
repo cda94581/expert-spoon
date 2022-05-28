@@ -1,0 +1,20 @@
+{
+	"name": "MCDC_BDS",
+	"author": "cda94581",
+	"packs": {
+		"behaviorPack": "./BP"
+	},
+	"regolith": {
+		"profiles": {
+			"dev": {
+				"filters": [],
+				"export": {
+					"target": "local",
+					"readOnly": false
+				}
+			}
+		},
+		"filterDefinitions": {},
+		"dataPath": "./data"
+	}
+}

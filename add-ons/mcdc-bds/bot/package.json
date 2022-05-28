@@ -1,0 +1,15 @@
+{
+	"name": "bot",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"start": "node .",
+		"test-send": "node ./test-send.js",
+		"test-fetch": "node ./test-fetch.js"
+	},
+	"author": "cda94581",
+	"license": "MIT",
+	"dependencies": {
+		"discord.js": "^13.7.0"
+	}
+}

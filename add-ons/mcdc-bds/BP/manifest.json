@@ -1,0 +1,27 @@
+{
+	"format_version": 2,
+	"header": {
+		"description": "§☆A Minecraft-to-Discord chat bridge, designed for servers.\n§cWARNING:§r This pack does not work on §oLocal Worlds§r or §oRealms§r.\n\nThis pack runs by making HTTP POST and GET requests to a medium server, designed for local use. The server then processes the request and with sends data to Discord (POST, MC-DC), or sends data back to the request (GET, DC-MC).\n§bUSAGE:§r To properly use the pack, please consult the §aREADME.md§r file, packaged in the download.\n\nWritten by §ccda94581§r, MIT License",
+		"name": "MCDC For BDS",
+		"uuid": "9da2e6a2-9098-4a59-9fd2-6fe889dc33bd",
+		"version": [ 1, 19, 0 ],
+		"min_engine_version": [ 1, 19, 0 ]
+	},
+	"modules": [{
+		"type": "script",
+		"language": "javascript",
+		"entry": "scripts/index.js",
+		"uuid": "268d8577-257a-419f-b44b-a728ccf50ab1",
+		"version": [ 1, 19, 0 ]
+	}],
+	"dependencies": [
+		{
+			"uuid": "b26a4d4c-afdf-4690-88f8-931846312678",
+			"version": [ 0, 1, 0 ]
+		},
+		{
+			"uuid": "777b1798-13a6-401c-9cba-0cf17e31a81b",
+			"version": [ 0, 1, 0 ]
+		}
+	]
+}

@@ -1,0 +1,7 @@
+{
+	"channel": "CHANNELID",
+	"token": "BOTTOKEN",
+	"webhookID": "WEBHOOKID",
+	"webhookToken": "WEBHOOKTOKEN",
+	"port": 49152
+}
