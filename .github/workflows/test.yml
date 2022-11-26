@@ -10,4 +10,4 @@ jobs:
           node-version: 18
       - run: node workflow_test.js
       - run: ls
-      - run: echo $TEST
+      - run: echo ${{ env.TEST }}
