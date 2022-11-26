@@ -8,6 +8,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
+      - run: echo "TEST2=test 2" >> $GITHUB_ENV
       - run: node workflow_test.js
       - run: ls
-      - run: echo ${{ env.TEST }}
+      - run: echo "${{ env.TEST }}"
