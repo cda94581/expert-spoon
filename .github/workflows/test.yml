@@ -3,13 +3,18 @@ on: [push]
 jobs:
   job1:
     runs-on: ubuntu-latest
+    outputs:
+      output1: ${{ steps.step1.outputs.TEST }}
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: echo "TEST2=test 2" >> $GITHUB_ENV
       - run: node workflow_test.js
-      - run: ls
-      - run: echo "${{ env.TEST }}"
-      - run: echo "${{ env.TEST2 }}"
+      - run: echo ${{needs.job1.outputs.output1}}
+      - run: echo ${{env.TEST}}
+  job2:
+    runs-on: ubuntu-latest
+    needs: job1
+    steps:
+      - run: echo ${{needs.job1.outputs.output1}}
