@@ -12,3 +12,4 @@ jobs:
       - run: node workflow_test.js
       - run: ls
       - run: echo "${{ env.TEST }}"
+      - run: echo "${{ env.TEST2 }}"
