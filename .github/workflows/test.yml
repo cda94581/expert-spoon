@@ -10,7 +10,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: node workflow_test.js
+      - id: step1
+        run: node workflow_test.js
       - run: echo ${{needs.job1.outputs.output1}}
       - run: echo ${{env.TEST}}
   job2:
