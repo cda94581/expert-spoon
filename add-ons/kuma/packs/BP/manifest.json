@@ -1,0 +1,27 @@
+{
+	"format_version": 2,
+	"header": {
+		"description": "Idk anymore, SS people are weird...",
+		"name": "Kuma Thing",
+		"uuid": "d8455e3f-f5c3-40b2-a80c-77d5bec82fab",
+		"version": [ 1, 0, 0 ],
+		"min_engine_version": [ 1, 19, 50 ]
+	},
+	"modules": [{
+		"type": "script",
+		"language": "javascript",
+		"entry": "scripts/index.js",
+		"uuid": "ab4c251f-7b77-494e-829a-6ff9a4c8cd0c",
+		"version": [ 1, 0, 0 ]
+	}],
+	"dependencies": [
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.1.0-beta"
+		},
+		{
+			"uuid": "9df76aac-a132-430c-bd03-30379cfcc3cd",
+			"version": [ 1, 0, 0 ]
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Bedrock-OSS/regolith-schemas/main/config/v1.1.json",
+	"author": "cda94581",
+	"name": "kuma",
+	"packs": {
+		"behaviorPack": "./packs/BP",
+		"resourcePack": "./packs/RP"
+	},
+	"regolith": {
+		"dataPath": "./packs/data",
+		"filterDefinitions": {
+			"generateAnim": {
+				"runWith": "nodejs",
+				"script": "./script/generateAnim.js"
+			}
+		},
+		"profiles": {
+			"default": {
+				"export": {
+					"readOnly": false,
+					"target": "development"
+				},
+				"filters": [
+					{ "filter": "generateAnim" }
+				]
+			}
+		}
+	}
+}

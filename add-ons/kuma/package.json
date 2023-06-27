@@ -1,0 +1,16 @@
+{
+  "name": "kuma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@minecraft/server": "^1.1.0-beta.release.1.19.50",
+    "glob": "^8.0.3"
+  }
+}
