@@ -43,27 +43,27 @@ Examples:
 <!-- BEGIN COMMAND LIST -->
 Command | Usage | Description
 --- | --- | ---
-`p_legs` | `equipment:p_legs <Enchantment ID>:[Level][]` | Enchants an item in the leggings slot.
-`p_legs_give` | `equipment:p_legs_give <Item ID> <Amount> <Enchantment ID>:[Level][]` | Enchants an item in the leggings slot. Gives an item, replacing any current equipment in that slot.
-`p_head` | `equipment:p_head <Enchantment ID>:[Level][]` | Enchants an item in the helmet slot.
-`p_head_give` | `equipment:p_head_give <Item ID> <Amount> <Enchantment ID>:[Level][]` | Enchants an item in the helmet slot. Gives an item, replacing any current equipment in that slot.
-`p_feet` | `equipment:p_feet <Enchantment ID>:[Level][]` | Enchants an item in the boots slot.
-`p_feet_give` | `equipment:p_feet_give <Item ID> <Amount> <Enchantment ID>:[Level][]` | Enchants an item in the boots slot. Gives an item, replacing any current equipment in that slot.
-`p_chest` | `equipment:p_chest <Enchantment ID>:[Level][]` | Enchants an item in the chestplate slot.
-`p_chest_give` | `equipment:p_chest_give <Item ID> <Amount> <Enchantment ID>:[Level][]` | Enchants an item in the chestplate slot. Gives an item, replacing any current equipment in that slot.
-`as_legs` | `equipment:as_legs <X> <Y> <Z> <Enchantment ID>:[Level][]` | Enchants an item in the leggings slot. Applies to armor stands.
-`as_legs_give` | `equipment:as_legs_give <X> <Y> <Z> <Item ID> <Amount> <Enchantment ID>:[Level][]` | Enchants an item in the leggings slot. Gives an item, replacing any current equipment in that slot. Applies to armor stands.
-`as_head` | `equipment:as_head <X> <Y> <Z> <Enchantment ID>:[Level][]` | Enchants an item in the helmet slot. Applies to armor stands.
-`as_head_give` | `equipment:as_head_give <X> <Y> <Z> <Item ID> <Amount> <Enchantment ID>:[Level][]` | Enchants an item in the helmet slot. Gives an item, replacing any current equipment in that slot. Applies to armor stands.
-`as_feet` | `equipment:as_feet <X> <Y> <Z> <Enchantment ID>:[Level][]` | Enchants an item in the boots slot. Applies to armor stands.
-`as_feet_give` | `equipment:as_feet_give <X> <Y> <Z> <Item ID> <Amount> <Enchantment ID>:[Level][]` | Enchants an item in the boots slot. Gives an item, replacing any current equipment in that slot. Applies to armor stands.
-`as_chest` | `equipment:as_chest <X> <Y> <Z> <Enchantment ID>:[Level][]` | Enchants an item in the chestplate slot. Applies to armor stands.
-`as_chest_give` | `equipment:as_chest_give <X> <Y> <Z> <Item ID> <Amount> <Enchantment ID>:[Level][]` | Enchants an item in the chestplate slot. Gives an item, replacing any current equipment in that slot. Applies to armor stands.
+`p_legs` | `equipment:p_legs [Enchantment ID]:[Level][]` | Enchants an item in the leggings slot.
+`p_legs_give` | `equipment:p_legs_give <Item ID> <Amount> [Enchantment ID]:[Level][]` | Enchants an item in the leggings slot. Gives an item, replacing any current equipment in that slot.
+`p_head` | `equipment:p_head [Enchantment ID]:[Level][]` | Enchants an item in the helmet slot.
+`p_head_give` | `equipment:p_head_give <Item ID> <Amount> [Enchantment ID]:[Level][]` | Enchants an item in the helmet slot. Gives an item, replacing any current equipment in that slot.
+`p_feet` | `equipment:p_feet [Enchantment ID]:[Level][]` | Enchants an item in the boots slot.
+`p_feet_give` | `equipment:p_feet_give <Item ID> <Amount> [Enchantment ID]:[Level][]` | Enchants an item in the boots slot. Gives an item, replacing any current equipment in that slot.
+`p_chest` | `equipment:p_chest [Enchantment ID]:[Level][]` | Enchants an item in the chestplate slot.
+`p_chest_give` | `equipment:p_chest_give <Item ID> <Amount> [Enchantment ID]:[Level][]` | Enchants an item in the chestplate slot. Gives an item, replacing any current equipment in that slot.
+`as_legs` | `equipment:as_legs <X> <Y> <Z> [Enchantment ID]:[Level][]` | Enchants an item in the leggings slot. Applies to armor stands.
+`as_legs_give` | `equipment:as_legs_give <X> <Y> <Z> <Item ID> <Amount> [Enchantment ID]:[Level][]` | Enchants an item in the leggings slot. Gives an item, replacing any current equipment in that slot. Applies to armor stands.
+`as_head` | `equipment:as_head <X> <Y> <Z> [Enchantment ID]:[Level][]` | Enchants an item in the helmet slot. Applies to armor stands.
+`as_head_give` | `equipment:as_head_give <X> <Y> <Z> <Item ID> <Amount> [Enchantment ID]:[Level][]` | Enchants an item in the helmet slot. Gives an item, replacing any current equipment in that slot. Applies to armor stands.
+`as_feet` | `equipment:as_feet <X> <Y> <Z> [Enchantment ID]:[Level][]` | Enchants an item in the boots slot. Applies to armor stands.
+`as_feet_give` | `equipment:as_feet_give <X> <Y> <Z> <Item ID> <Amount> [Enchantment ID]:[Level][]` | Enchants an item in the boots slot. Gives an item, replacing any current equipment in that slot. Applies to armor stands.
+`as_chest` | `equipment:as_chest <X> <Y> <Z> [Enchantment ID]:[Level][]` | Enchants an item in the chestplate slot. Applies to armor stands.
+`as_chest_give` | `equipment:as_chest_give <X> <Y> <Z> <Item ID> <Amount> [Enchantment ID]:[Level][]` | Enchants an item in the chestplate slot. Gives an item, replacing any current equipment in that slot. Applies to armor stands.
 `help` | `equipment:help [command]` | Gets a list of all commands and its usage.
-`p_offhand` | `equipment:p_offhand <Enchantment ID>:[Level][]` | Enchants an item in the offhand.
-`p_offhand_give` | `equipment:p_offhand_give <Item ID> <Amount> <Enchantment ID>:[Level][]` | Enchants an item in the offhand. Gives an item, replacing any current equipment in that slot.
-`as_offhand` | `equipment:as_offhand <X> <Y> <Z> <Enchantment ID>:[Level][]` | Enchants an item in the offhand. Applies to armor stands.
-`as_offhand_give` | `equipment:as_offhand_give <X> <Y> <Z> <Item ID> <Amount> <Enchantment ID>:[Level][]` | Enchants an item in the offhand. Gives an item, replacing any current equipment in that slot. Applies to armor stands.
+`p_offhand` | `equipment:p_offhand [Enchantment ID]:[Level][]` | Enchants an item in the offhand.
+`p_offhand_give` | `equipment:p_offhand_give <Item ID> <Amount> [Enchantment ID]:[Level][]` | Enchants an item in the offhand. Gives an item, replacing any current equipment in that slot.
+`as_offhand` | `equipment:as_offhand <X> <Y> <Z> [Enchantment ID]:[Level][]` | Enchants an item in the offhand. Applies to armor stands.
+`as_offhand_give` | `equipment:as_offhand_give <X> <Y> <Z> <Item ID> <Amount> [Enchantment ID]:[Level][]` | Enchants an item in the offhand. Gives an item, replacing any current equipment in that slot. Applies to armor stands.
 `p_ui` | `equipment:p_ui ` | Enchants an equipment piece. Shows a UI for ease of use.
 `as_ui` | `equipment:as_ui ` | Enchants an equipment piece. Shows a UI for ease of use.
 <!-- END COMMAND LIST -->
