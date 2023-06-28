@@ -18,9 +18,4 @@ const final = [
 	...lines.slice(end)
 ];
 
-// console.log(final);
-// console.log(begin, end);
-// console.log(lines.slice(0, 5));
-// console.log(lines);
-
 fs.writeFileSync(`${process.env.ROOT_DIR}/README.md`, final.join('\n').replaceAll('\r',''), 'utf-8');
