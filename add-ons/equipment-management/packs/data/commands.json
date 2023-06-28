@@ -1,0 +1,24 @@
+{
+	"_ignore": [
+		"ui/_formMap.js"
+	],
+	"folders": {
+		"ui": {
+			"postfix": "_ui",
+			"descPost": " Shows a UI for ease of use."
+		}
+	},
+	"functions": {
+		"(.*)Give": {
+			"postfix": "_give",
+			"descPost": " Gives an item, replacing any current equipment in that slot.",
+			"usagePre": "<Item ID> <Amount> "
+		}
+	},
+	"commands": {
+		"as_(?!.*(ui)).*": {
+			"descPost": " Applies to armor stands.",
+			"usagePre": "<X> <Y> <Z> "
+		}
+	}
+}

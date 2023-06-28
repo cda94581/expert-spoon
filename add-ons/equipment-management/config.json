@@ -1,0 +1,82 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Bedrock-OSS/regolith-schemas/main/config/v1.1.json",
+	"author": "cda94581",
+	"name": "equipment-management",
+	"namespace": "equipment",
+	"packs": {
+		"behaviorPack": "./packs/BP",
+		"resourcePack": "./packs/RP"
+	},
+	"regolith": {
+		"dataPath": "./packs/data",
+		"filterDefinitions": {
+			"commandList": {
+				"runWith": "nodejs",
+				"script": "filters/commandList.js"
+			},
+			"export": {
+				"runWith": "nodejs",
+				"script": "filters/export.js"
+			},
+			"minimize": {
+				"url": "github.com/cda94581/regolith-filters",
+				"version": "0.0.4"
+			},
+			"namespace": {
+				"runWith": "nodejs",
+				"script": "filters/namespace.js"
+			},
+			"readme": {
+				"runWith":"nodejs",
+				"script": "filters/readme.js"
+			}
+		},
+		"profiles": {
+			"default": {
+				"export": {
+					"readOnly": false,
+					"target": "development"
+				},
+				"filters": [
+					{
+						"filter": "commandList"
+					},
+					{
+						"filter": "namespace"
+					}
+				]
+			},
+			"local": {
+				"export": {
+					"readOnly": false,
+					"target": "local"
+				},
+				"filters": [
+					{
+						"profile": "default"
+					}
+				]
+			},
+			"build": {
+				"export": {
+					"readOnly": true,
+					"target": "local"
+				},
+				"filters": [
+					{
+						"profile": "default"
+					},
+					{
+						"filter": "readme"
+					},
+					{
+						"filter": "export",
+						"settings": {
+							"exclude": [ "RP" ]
+						}
+					}
+				]
+			}
+		}
+	}
+}
