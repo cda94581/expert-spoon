@@ -34,6 +34,7 @@ Preface all commands with the `/scriptevent` command.
 - Items surrounded in angled brackets `<>` are **required** variables.
 - Items surrounded in square brackets `[]` are **optional** variables.
 - Empty brackets `[]` indicate a list.
+- Items separated by a pipe `|` indicate options. Choose one of the listed items.
 
 Examples:
 - Giving and enchanting an armor stand at `0, 0, 0` with a Diamond Helmet containing Protection 4 and Unbreaking 3
@@ -62,8 +63,8 @@ Command | Usage | Description
 `as_chest` | `equipment:as_chest <X> <Y> <Z> [Enchantment ID]:[Level][]` | Enchants an item in the chestplate slot. Applies to armor stands.
 `as_chest_give` | `equipment:as_chest_give <X> <Y> <Z> <Item ID> <Amount> [Enchantment ID]:[Level][]` | Enchants an item in the chestplate slot. Gives an item, replacing any current equipment in that slot. Applies to armor stands.
 `help` | `equipment:help [command]` | Gets a list of all commands and its usage.
-`custom` | `equipment:custom <Selector> <EquipmentSlot:offhand|head|chest|legs|feet> [Enchantment ID]:[Level][]` | Manage equipment with more freedom, such as bulk selections and enchants on equipment for other entities.
-`custom_give` | `equipment:custom_give <Item ID> <Amount> <Selector> <EquipmentSlot:offhand|head|chest|legs|feet> [Enchantment ID]:[Level][]` | Manage equipment with more freedom, such as bulk selections and enchants on equipment for other entities. Gives an item, replacing any current equipment in that slot.
+`custom` | `equipment:custom <Selector> <EquipmentSlot:offhand\|head\|chest\|legs\|feet> [Enchantment ID]:[Level][]` | Manage equipment with more freedom, such as bulk selections and enchants on equipment for other entities.
+`custom_give` | `equipment:custom_give <Item ID> <Amount> <Selector> <EquipmentSlot:offhand\|head\|chest\|legs\|feet> [Enchantment ID]:[Level][]` | Manage equipment with more freedom, such as bulk selections and enchants on equipment for other entities. Gives an item, replacing any current equipment in that slot.
 `p_offhand` | `equipment:p_offhand [Enchantment ID]:[Level][]` | Enchants an item in the offhand.
 `p_offhand_give` | `equipment:p_offhand_give <Item ID> <Amount> [Enchantment ID]:[Level][]` | Enchants an item in the offhand. Gives an item, replacing any current equipment in that slot.
 `as_offhand` | `equipment:as_offhand <X> <Y> <Z> [Enchantment ID]:[Level][]` | Enchants an item in the offhand. Applies to armor stands.

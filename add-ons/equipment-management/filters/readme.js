@@ -4,7 +4,7 @@ const filePath = `data/commandMeta.json`;
 const commandMeta = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
 
 const table = [ 'Command | Usage | Description', '--- | --- | ---' ];
-for (const [k, v] of Object.entries(commandMeta)) table.push(`\`${k}\` | \`${v.usage}\` | ${v.description}`);
+for (const [k, v] of Object.entries(commandMeta)) table.push(`\`${k}\` | \`${v.usage.replaceAll('|', '\\|')}\` | ${v.description}`);
 
 const readme = fs.readFileSync(`${process.env.ROOT_DIR}/README.md`, 'utf-8');
 const lines = readme.split('\n');
