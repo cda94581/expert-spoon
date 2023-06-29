@@ -1,5 +1,7 @@
 # Equipment Management
-v1.20.0
+v1.20.1
+
+Download Link: https://github.com/cda94581/expert-spoon/releases/tag/add-ons.equipment-management
 
 Directly manage and enchant equipment items, allow for easier enchanting of "offhand" items, armor, and armor stand items!
 
@@ -60,6 +62,8 @@ Command | Usage | Description
 `as_chest` | `equipment:as_chest <X> <Y> <Z> [Enchantment ID]:[Level][]` | Enchants an item in the chestplate slot. Applies to armor stands.
 `as_chest_give` | `equipment:as_chest_give <X> <Y> <Z> <Item ID> <Amount> [Enchantment ID]:[Level][]` | Enchants an item in the chestplate slot. Gives an item, replacing any current equipment in that slot. Applies to armor stands.
 `help` | `equipment:help [command]` | Gets a list of all commands and its usage.
+`custom` | `equipment:custom <Selector> <EquipmentSlot:offhand|head|chest|legs|feet> [Enchantment ID]:[Level][]` | Manage equipment with more freedom, such as bulk selections and enchants on equipment for other entities.
+`custom_give` | `equipment:custom_give <Item ID> <Amount> <Selector> <EquipmentSlot:offhand|head|chest|legs|feet> [Enchantment ID]:[Level][]` | Manage equipment with more freedom, such as bulk selections and enchants on equipment for other entities. Gives an item, replacing any current equipment in that slot.
 `p_offhand` | `equipment:p_offhand [Enchantment ID]:[Level][]` | Enchants an item in the offhand.
 `p_offhand_give` | `equipment:p_offhand_give <Item ID> <Amount> [Enchantment ID]:[Level][]` | Enchants an item in the offhand. Gives an item, replacing any current equipment in that slot.
 `as_offhand` | `equipment:as_offhand <X> <Y> <Z> [Enchantment ID]:[Level][]` | Enchants an item in the offhand. Applies to armor stands.
@@ -109,6 +113,7 @@ This page is not fleshed out, but here are a few pieces of information you may f
 - Using a custom item/gesture to automatically open a UI for armor stands, to avoid painfully typing coordinates.
 - Potentially add language localization as an optional resource pack.
 - Add a pack icon lol.
+- Accessibility for other entities besides the `custom` command.
 
 ## Credits
 **Author:** [cda94581](https://github.com/cda94581)  
